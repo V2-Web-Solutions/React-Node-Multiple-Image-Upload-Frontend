@@ -44,7 +44,7 @@ const CreateCategory = () => {
       Array.from(image).forEach((item) => {
         formData.append("images", item);
       });
-      const url = "https://react-node-multiple-image-upload-backendsite.vercel.app/createImages";
+      const url = "https://react-node-multiple-image-upload-backendsite-dfltatjjr.vercel.app/createImages";
       axios
         .post(url, formData)
         .then((res) => {
