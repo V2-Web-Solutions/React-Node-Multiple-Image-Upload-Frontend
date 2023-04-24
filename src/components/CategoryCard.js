@@ -12,7 +12,8 @@ const CategoryCard = ({ data, getAllCategoryFunc }) => {
       toast.error("Cannot delete");
     } else {
       await axios
-        .post("http://localhost:8000/deleteCategoryId", {
+        // .post("http://localhost:8000/deleteCategoryId", {
+          .post("https://react-node-multiple-image-upload-backendsite.vercel.app/deleteCategoryId", {
           categoryId: id,
         })
         .then((res) => {

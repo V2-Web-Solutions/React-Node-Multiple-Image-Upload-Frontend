@@ -16,7 +16,7 @@ const CreateCategory = () => {
   const [categoryData, setCategoryData] = useState([]);
 
   const getAllCategoryFunc = async () => {
-    await axios.get("http://localhost:8000/getImages").then((res) => {
+    await axios.get("https://react-node-multiple-image-upload-backendsite.vercel.app/getImages").then((res) => {
       if (res.data.success === 1) {
         setCategoryData(res.data.ImageData);
       } else {
@@ -44,7 +44,7 @@ const CreateCategory = () => {
       Array.from(image).forEach((item) => {
         formData.append("images", item);
       });
-      const url = "http://localhost:8000/createImages";
+      const url = "https://react-node-multiple-image-upload-backendsite.vercel.app/createImages";
       axios
         .post(url, formData)
         .then((res) => {

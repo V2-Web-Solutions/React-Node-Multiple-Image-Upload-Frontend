@@ -22,7 +22,7 @@ const ShowAndUpdateCategoryImage = () => {
     }
 
     axios
-      .post("http://localhost:8000/getCategoryId", {
+      .post("https://react-node-multiple-image-upload-backendsite.vercel.app/getCategoryId", {
         categoryId: categoryId,
       })
       .then((res) => {
@@ -117,7 +117,7 @@ const ShowAndUpdateCategoryImage = () => {
                 src={
                   item
                     ? item.filename
-                      ? `http://localhost:8000/${item.filename}`
+                      ? `https://react-node-multiple-image-upload-backendsite.vercel.app/${item.filename}`
                       : URL.createObjectURL(item)
                     : null
                 }
