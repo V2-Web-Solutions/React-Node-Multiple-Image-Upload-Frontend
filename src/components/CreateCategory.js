@@ -16,7 +16,7 @@ const CreateCategory = () => {
   const [categoryData, setCategoryData] = useState([]);
 
   const getAllCategoryFunc = async () => {
-    await axios.get("https://react-node-multiple-image-upload-backendsite.vercel.app/getImages").then((res) => {
+    await axios.get("https://react-node-multiple-image-upload-backendsite-dfltatjjr.vercel.app/getImages").then((res) => {
       if (res.data.success === 1) {
         setCategoryData(res.data.ImageData);
       } else {
