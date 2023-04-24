@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.mainDiv .imgDiv:hover {
+  box-shadow: 0 0 0 2px green;
+
+  transition: 0.5s ease;
+}
+
+.mainDiv .imgDiv .imageClass:hover {
+  transform: scale(0.96);
+
+  transition: 0.5s ease;
+}
